@@ -16,7 +16,7 @@ public:
     }
 
     // alternate constructor
-    Data(string playerName, int height, int weight, double dash, int bench);
+    Data(string pN, int h, int w, double d, int b);
 
     friend ostream& operator<<(ostream &out, const Data& object);
     bool operator< (const Data& rhs);
