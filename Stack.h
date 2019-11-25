@@ -4,11 +4,11 @@
 #include "LinkedList.h"
 using namespace std;
 
-class Stack : public LinkedList {
+class Stack : public LinkedList { // inherit LinkedList class
 public:
-    Stack();
-    void push_head(const Data& item);
-    bool pop_head();
+    Stack(); // default constructor
+    void push_head(const Data& item); // member public function
+    bool pop_head(); // member public function
 };
 
 

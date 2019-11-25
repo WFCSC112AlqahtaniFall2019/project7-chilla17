@@ -4,15 +4,15 @@
 #include "LinkedList.h"
 
 
-class Queue : public LinkedList {
+class Queue : public LinkedList { // inherit LinkedList class
 public:
-    Queue();
+    Queue(); // default constructor
 
-    void enqueue_tail(const Data& object);
-    bool dequeue_head();
+    void enqueue_tail(const Data& object); // member public function
+    bool dequeue_head(); // member public function
 
 private:
-    Node* tail;
+    Node* tail; // private Node* tail
 };
 
 

@@ -2,12 +2,13 @@
 #define PROJECT7_SORTEDLINKEDLIST_H
 #include <iostream>
 #include "LinkedList.h"
+#include "Data.h"
 using namespace std;
 
 
-class SortedLinkedList : public LinkedList {
+class SortedLinkedList : public LinkedList { // inherit LinkedList class
 public:
-    void insertSorted(Data& object);
+    void insertSorted(const Data& object); // member public function
 };
 
 

@@ -7,18 +7,12 @@ using namespace std;
 class Data {
 public:
     // default constructor
-    Data () {
-        playerName = "";
-        height = 0;
-        weight = 0;
-        dash = 0;
-        bench = 0;
-    }
+    Data();
 
     // alternate constructor
     Data(string pN, int h, int w, double d, int b);
 
-    friend ostream& operator<<(ostream &out, const Data& object);
+    friend ostream& operator<<(ostream &out, const Data& print);
     bool operator< (const Data& rhs);
 
 protected:
